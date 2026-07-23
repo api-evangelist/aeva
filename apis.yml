@@ -1,8 +1,31 @@
 aid: aeva
 name: Aeva
-description: Aeva is a company surfaced as a portfolio company of canaan-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Aeva Technologies is a Mountain View, California sensing and perception company
+  that builds 4D LiDAR based on proprietary Frequency Modulated Continuous Wave
+  (FMCW) technology, measuring instant velocity in addition to 3D position for
+  every point in a scene. Its product line spans Atlas and Atlas Ultra long-range
+  automotive-grade sensors, the Omni wide-view short-range sensor, and Eve 1
+  precision laser speed sensors for factory automation, serving autonomous
+  vehicles, robotics, industrial automation, security, and physical-AI markets.
+  Aeva is a hardware and perception-software provider rather than a web-API
+  company: its developer surface is open-source software on the aevainc GitHub
+  org (the AevaScenes Python SDK and Doppler ICP), the AevaScenes dataset, and
+  product SDK/EULA-gated software delivered with its sensors. No public REST or
+  web API is published.
 url: https://raw.githubusercontent.com/api-evangelist/aeva/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.aeva.com/app/themes/aeva-2023/images/favicon/ms-icon-144x144.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -14,9 +37,50 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- LiDAR
+- 4D LiDAR
+- FMCW
+- Autonomous Vehicles
+- Robotics
+- Perception
+- Sensors
+- Industrial Automation
+- Physical AI
 apis: []
+common:
+- type: DomainSecurity
+  url: security/aeva-domain-security.yml
+- type: Website
+  url: https://www.aeva.com/
+- type: Portal
+  name: Developer Resources
+  url: https://resources.aeva.com/
+- type: GitHubOrganization
+  url: https://github.com/aevainc
+- type: Blog
+  name: News & Media
+  url: https://www.aeva.com/news/
+- type: Support
+  name: Contact Us
+  url: https://www.aeva.com/contact-us/
+- type: PrivacyPolicy
+  url: https://www.aeva.com/privacy-policy/
+- type: TermsOfService
+  name: Terms & Conditions
+  url: https://www.aeva.com/terms-conditions/
+- type: Packages
+  name: Open-source software packages
+  url: packages/aeva-packages.yml
+- type: SDKs
+  name: AevaScenes Python SDK
+  url: packages/aeva-packages.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

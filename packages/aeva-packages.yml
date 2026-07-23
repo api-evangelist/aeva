@@ -1,0 +1,23 @@
+generated: '2026-07-17'
+method: searched
+source: https://github.com/aevainc
+notes: >-
+  Aeva is a 4D LiDAR hardware/perception company; it ships no web/REST API client
+  SDK. Its first-party open-source software is published on the aevainc GitHub org.
+  aevascenes is the Python SDK for the AevaScenes autonomous-driving dataset. It is
+  installed from source (no PyPI/registry release found as of this pass).
+packages:
+  - language: python
+    registry: github
+    name: aevascenes
+    url: https://github.com/aevainc/aevascenes
+    install: pip install git+https://github.com/aevainc/aevascenes.git
+    official: true
+    description: Python SDK for the AevaScenes 4D LiDAR autonomous-driving dataset.
+  - language: python
+    registry: github
+    name: Doppler-ICP
+    url: https://github.com/aevainc/Doppler-ICP
+    install: git clone https://github.com/aevainc/Doppler-ICP
+    official: true
+    description: Reference implementation of Doppler ICP point-cloud registration.
